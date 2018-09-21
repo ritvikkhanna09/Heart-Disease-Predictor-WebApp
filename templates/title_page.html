@@ -13,18 +13,10 @@
 </head>
 
 <body style="  background-image: url('../res/heart.jpg'); background-repeat: no-repeat;background-attachment: fixed; background-position: left; ">
-	<form class="form-logsin" action="login.php" method="post">
-	  <h1>Login</h1>  
-	  <fieldset>
-		<label for="name">Username:</label>
-		<input type="text" id="name" name="user_name">
-		
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="user_password">
-	  </fieldset>
-	  <?php include('errors.php'); ?>
-	  <button type="submit" name="login">Login</button>
-	  <h4>New User? <a href="signup.html">Sign up Here</a></h4>
-	</form>  
+	<div class="title-wrapper" action="login.php" method="post">
+      <h1>Predict the Risk Of Heart Disease</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button type="submit" name="sign_up" onclick="location.href='login.html'">Get Started !</button>
+    </div>  
   </body>
 </html>

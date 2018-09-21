@@ -2,64 +2,42 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heart Disease Predictor</title>
   <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <div class="table-wrapper">
-        <table class="table-user">
-            <tr>
-                <td><h2>User Info</h2> </td>
-            </tr>
-            <tr>
-                <td><div class="user-pic"></div>
-                </td>
-            </tr>
-            <tr>
-                <td>Ritvik Khanna</td>
-            </tr>
-            <tr>
-                <td>ritvikkhanna09@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Age : 21</td>
-            </tr>
-            <tr>
-                <td>Sex : Male</td>
-            </tr>
-        </table>      
-    </div>
-    <div class="form-wrapper">
-        <form class="form-logsin" action="signup.php" method="post">
-            <h1>Prediction Form</h1>  
-            <fieldset>
-                <label for="name">Age</label>
-                <input type="text" id="name" name="user_name" value="">
-                
-                <label for="mail">Sex</label>
-                <input type="email" id="mail" name="user_email" value="">
-                <label for="name">Chest Pain Type</label>
-                <input type="text" id="name" name="user_name" value="">
-                
-                <label for="mail">resting blood pressure</label>
-                <input type="email" id="mail" name="user_email" value="">
-                <label for="name">serum cholestoral in mg/dl</label>
-                <input type="text" id="name" name="user_name" value="">
-                
-                <label for="mail">Blood Sugar</label>
-                <input type="email" id="mail" name="user_email" value="">
-                <label for="name">Resting Electrocardiographic</label>
-                <input type="text" id="name" name="user_name" value="">
-                
-                <label for="mail">maximum heart rate achieved</label>
-                <input type="email" id="mail" name="user_email" value="">
-                <label for="name">exercise induced angina</label>
-                <input type="text" id="name" name="user_name" value="">
-            </fieldset>
-            <button type="submit" name="sign_up">Predict Heart Risk</button>
-        </form> 
-    </div>
+        <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+        </div>
+    <div class="prediction-form-wrapper">
+        <form class="prediction-form" action="">
+                <div class="tab">
+                    <p>What is Your Present Age ? </p>
+                    <input type="text" id="Age" value="" oninput="this.className='' ">
+                </div>
+                <div class="tab">
+                        <p>Sex ? </p>
+                    <input type="radio" name="gender" value="male" oninput="this.className = ''" checked>Male
+                    <input type="radio" name="gender" value="female" oninput="this.className = ''">Female
+                    <input type="radio" name="gender" value="other" oninput="this.className = ''">Other
+                    </div>
+                <div class="tab">
+                    <p>Chest Pain Type ? </p>
+                    <input type="text" id="name" value="" oninput="this.className = ''">
+                    </div>
+                <div class="nav-buttons-wrapper">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+        </form>
+     </div>
+    <script type="text/javascript" src="../js/form_tab.js"></script>
 </body>
 </html>
+
+<!-- 
+Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello -->

@@ -5,9 +5,23 @@
 }
 
 body {
+  background-color: #000;
   font-family: 'Nunito', sans-serif;
   color: #384047;
 }
+
+
+.title-wrapper{
+  max-width: 600px;
+  margin: 90px 0 0 700px;
+  padding: 10px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+.title-wrapper p{
+  padding: 20px;
+}
+
 
 .about-us{
   text-align: justify;
@@ -19,13 +33,14 @@ body {
 }
 
 .form-logsin {
+  color: #fff;
   max-width: 600px;
-  margin: 10px auto;
+  margin: 90px 0 0 700px;
   padding: 10px 20px;
-  background: #f4f7f8;
+  /* background: #f4f7f8; */
   border-radius: 8px;
 }
-.form-logsin label{
+label{
     text-align: center;
 }
 
@@ -53,14 +68,14 @@ textarea,
 select {
   background: rgba(255,255,255,0.1);
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   background-color: #e8eeef;
-  color: #8a97a0;
+  color: #000;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
@@ -197,3 +212,78 @@ th {
     height: 50px;
 } 
 */
+
+
+
+
+.prediction-form-wrapper{
+  margin: 90px 150px 50px 150px;
+}
+
+.prediction-form{
+  overflow: auto;
+  margin: 0px 100px 30px 100px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.tab {
+  text-align: center;
+  display: none;
+}
+.tab p{
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 20px 30px 20px;
+}
+.tab input[type="text"]{
+  text-align: center;
+  width: 100px;
+}
+
+.tab input[type="radio"],input[type="checkbox"] {
+  margin: 10px 10px 8px 40px;
+}
+
+.tab input.invalid {
+  background-color: #ffdddd;
+}
+
+
+.nav-buttons-wrapper{
+margin: 40px auto;
+}
+
+#prevBtn, #nextBtn{
+  padding: 0 0 0 0 ;
+  text-align: center;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+}
+#nextBtn{
+  float: right;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
