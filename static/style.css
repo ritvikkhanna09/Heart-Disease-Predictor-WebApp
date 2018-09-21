@@ -154,9 +154,8 @@ label.light {
 }
 
 .table-wrapper{
-    position: fixed;
     width: 400px;
-    float: left;
+    margin:0 auto;
 }
 
 .table-user{
