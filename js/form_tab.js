@@ -4,9 +4,9 @@ showTab(currentTab);
 function showTab(n) {
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
-  if (n == 0) {
+  if (n == 0 ) {
     document.getElementById("prevBtn").style.display = "none";
-  } else {
+  }else {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {

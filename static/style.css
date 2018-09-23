@@ -228,6 +228,7 @@ th {
 }
 
 .tab {
+  height: 200px;
   text-align: center;
   display: none;
 }
@@ -285,4 +286,32 @@ margin: 40px auto;
 /* Mark the steps that are finished and valid: */
 .step.finish {
   background-color: #4CAF50;
+}
+
+input[type='radio']:after {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  top: -6px;
+  left: -6px;
+  position: relative;
+  background-color: #fff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  top: -6px;
+  left: -6px;
+  position: relative;
+  background-color: #4CAF50;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
