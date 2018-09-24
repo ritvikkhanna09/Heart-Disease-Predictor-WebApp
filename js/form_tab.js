@@ -17,20 +17,16 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
+  console.log(currentTab);
   var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
   if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
   x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
-  // if you have reached the end of the form... :
   if (currentTab >= x.length) {
-    //...the form gets submitted:
-    document.getElementsByClassName("prediction-form").submit();
+    document.getElementById("final_form").submit();
     return false;
   }
-  // Otherwise, display the correct tab:
+
   showTab(currentTab);
 }
 
@@ -64,3 +60,9 @@ function fixStepIndicator(n) {
     //... and adds the "active" class to the current step:
     x[n].className += " active";
   }
+
+
+
+function myFunction() {
+  alert("The form was submitted");
+}

@@ -80,8 +80,7 @@ select {
   margin-bottom: 30px;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"]{
   margin: 0 4px 8px 0;
 }
 
@@ -220,7 +219,7 @@ th {
 }
 
 .prediction-form{
-  overflow: auto;
+  /* overflow: auto; */
   margin: 0px 100px 30px 100px;
   color: #fff;
   padding: 10px 20px;
@@ -265,6 +264,7 @@ margin: 40px auto;
 #nextBtn{
   float: right;
 }
+
 
 /* Make circles that indicate the steps of the form: */
 .step {
@@ -314,4 +314,108 @@ input[type='radio']:checked:after {
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
+}
+
+.dropDown-wrapper{
+  position: relative;
+  /* following 3 lines is for codepen presentation only*/
+  margin: auto;
+  height: 42px;
+  width: 150px;
+}
+
+/* the style for the label */
+.dropDown-toggle-label {
+  width: 150px;
+  position: relative;
+  padding: 14px 30px 14px 25px;
+  background-color: #474e5d;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-size: 12px;
+  transition: opacity .2s ease;
+  letter-spacing: .2px;
+  /* force parent to wrap around the label tag */
+  float: left;
+}
+
+.dropDown-toggle-label:active {
+  transform: scale(.98);
+}
+
+/* arrow indicator on the button */
+.dropDown-toggle-label:after{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  /* this makes the square appear as a white triangle */
+  background: linear-gradient(45deg, #fff 50%, transparent 0);
+  position: absolute;
+  right: 15px;
+  top: 35%;
+  transform: rotate(-45deg);
+}
+
+/* hide all input fields since the labels are connected to them by the id */
+.dropDown-wrapper input{display: none;}
+
+/* rotate the button arrow upwards */
+.dropDown-wrapper > input:checked + label:after{
+  top: 45%;
+  transform: rotate(135deg);
+}
+
+/* this will show dropDown when input is checked */
+.dropDown-wrapper > input:checked + label + .dropDown{
+  display: inline-block;
+}
+
+/* the drop-down style*/
+.dropDown{
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  border-radius: 4px 0 4px 4px;
+  min-width: 150px;
+  display: none;
+}
+
+/* the drop-down options style*/
+.dropDown label {
+  display: block;
+  padding: 12px 20px;
+  border-left: 0 solid transparent;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  opacity: .8;
+  transition:
+          border .3s ease,
+          padding-left .3s ease,
+          background-color .3s ease;
+}
+
+/* option item on hover */
+.dropDown label:hover{
+  border-left: 10px solid  #4CAF50;
+  background-color: #474e5d;
+  opacity: .9;
+  font-weight: 700;
+ 
+}
+
+/* this shows that the list item was selected */
+.dropDown input:checked + label{
+  font-weight: 700;
+  opacity: 1;
+  background-color: #474e5d;
+  opacity: 0.5;
 }
