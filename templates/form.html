@@ -8,10 +8,10 @@
 </head>
 <body>
         <div style="text-align:center;margin-top:40px;">
-                <span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span> <span class="step"></span><!--<span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span> -->
+                <span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span> 
         </div>
     <div class="prediction-form-wrapper">
-        <form class="prediction-form" id="final_form" onsubmit="window.location.href = 'https://www.google.com';">
+        <form class="prediction-form" id="final_form" action="prediction_page.html">
             <div class="tab">
                 <p>Sex ? </p>
                 <input type="radio" name="gender" value="1" >Male
@@ -93,23 +93,22 @@
                 <div class="dropDown-wrapper">
                     <input type="checkbox" id="dropDown-toggle#5"><label for="dropDown-toggle#5" class="dropDown-toggle-label">options</label>
                     <div class="dropDown">
-                        <input type="radio" id="option-5.1" value="0" name="slope"><label for="option-5.1">0</label>
-                        <input type="radio" id="option-5.2" value="1" name="slope"><label for="option-5.2">1</label>
-                        <input type="radio" id="option-5.3" value="2" name="slope"><label for="option-5.3">2</label>
-                        <input type="radio" id="option-5.4" value="3" name="slope"><label for="option-5.4">3</label>
+                        <input type="radio" id="option-5.1" value="0" name="ca"><label for="option-5.1">0 vessels</label>
+                        <input type="radio" id="option-5.2" value="1" name="ca"><label for="option-5.2">1 vessels</label>
+                        <input type="radio" id="option-5.3" value="2" name="ca"><label for="option-5.3">2 vessels</label>
+                        <input type="radio" id="option-5.4" value="3" name="ca"><label for="option-5.4">3 vessels</label>
                     </div>
                 </div>
             </div>
-            thalium heart scan
+            
             <div class="tab">
-                    <p>What are the number of major vessels colored by flourosopy ? </p>
+                    <p>What are the thalium heart scan readings ? </p>
                     <div class="dropDown-wrapper">
-                        <input type="checkbox" id="dropDown-toggle#5"><label for="dropDown-toggle#5" class="dropDown-toggle-label">options</label>
+                        <input type="checkbox" id="dropDown-toggle#6"><label for="dropDown-toggle#6" class="dropDown-toggle-label">options</label>
                         <div class="dropDown">
-                            <input type="radio" id="option-5.1" value="0" name="slope"><label for="option-5.1">0</label>
-                            <input type="radio" id="option-5.2" value="1" name="slope"><label for="option-5.2">1</label>
-                            <input type="radio" id="option-5.3" value="2" name="slope"><label for="option-5.3">2</label>
-                            <input type="radio" id="option-5.4" value="3" name="slope"><label for="option-5.4">3</label>
+                            <input type="radio" id="option-6.1" value="3" name="thal"><label for="option-6.1">Normal</label>
+                            <input type="radio" id="option-6.2" value="6" name="thal"><label for="option-6.2">Fixed detect</label>
+                            <input type="radio" id="option-6.3" value="7" name="thal"><label for="option-6.3">Reversible detect</label>
                         </div>
                     </div>
                 </div>

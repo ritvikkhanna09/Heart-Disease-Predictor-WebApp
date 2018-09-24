@@ -24,6 +24,7 @@ function nextPrev(n) {
   currentTab = currentTab + n;
   if (currentTab >= x.length) {
     document.getElementById("final_form").submit();
+    document.getElementsByClassName("nav-buttons-wrapper").style.display="none";
     return false;
   }
 
