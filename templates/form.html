@@ -2,8 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heart Disease Predictor</title>
   <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/form_submit.js"></script>
   <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
@@ -11,8 +14,8 @@
                 <span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span> 
         </div>
     <div class="prediction-form-wrapper">
-        <form class="prediction-form" id="final_form" action="prediction_page.html">
-            <div class="tab">
+        <form class="prediction-form" id="final_form">
+            <div class="tab"> 
                 <p>What is patient's gender ? </p>
                 <input type="radio" name="gender" value="1" >Male
                 <input type="radio" name="gender" value="0" >Female

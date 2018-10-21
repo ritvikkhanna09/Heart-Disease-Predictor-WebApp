@@ -23,8 +23,8 @@ function nextPrev(n) {
   x[currentTab].style.display = "none";
   currentTab = currentTab + n;
   if (currentTab >= x.length) {
-    document.getElementById("final_form").submit();
-    document.getElementsByClassName("nav-buttons-wrapper").style.display="none";
+    submit_to_server();
+    /*document.getElementsByClassName("nav-buttons-wrapper").style.display="none";*/
     return false;
   }
 
@@ -44,6 +44,8 @@ function validateForm() {
       y[i].className += " invalid";
       // and set the current valid status to false:
       valid = false;
+    } else {
+      y[i].value = Number(y[i].value)
     }
   }
   if (valid) {
