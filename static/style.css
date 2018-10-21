@@ -419,3 +419,29 @@ input[type='radio']:checked:after {
   background-color: #474e5d;
   opacity: 0.5;
 }
+
+/* option.html */
+
+
+.option-wrapper {
+  color: #fff;
+  max-width: 600px;
+  margin: 180px 0 0 700px;
+  padding: 10px 20px;
+  /* background: #f4f7f8; */
+  border-radius: 8px;
+}
+
+.option-table{
+  padding: 40 0 0 0px;
+  width: 100%;
+}
+
+.option-table tr{
+  padding: 25px 0 0px 0;
+  margin: 0 0 100px 0;
+}
+
+.option-table button{
+  font-size: 25px;
+}
