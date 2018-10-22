@@ -5,22 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../static/style.css" />
+	<script src="../js/form_submit.js"></script>
 </head>
 <body style="  background-image: url('../res/heart.jpg'); background-repeat: no-repeat;background-attachment: fixed; background-position: left; ">
-  <form class="form-logsin" action="signup.php" method="post">
+  <form class="form-logsin" id="signup_form" action="javascript:signup_form_submit()">
     <h1>Sign Up</h1>  
     <fieldset>
-      <label for="name">Username:</label>
-      <input type="text" id="name" name="user_name" value="">
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" name="Username" value="">
       
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" value="">
+
       <label for="mail">Email:</label>
-      <input type="email" id="mail" name="user_email" value="">
+      <input type="email" id="mail" name="Email" value="">
       
       <label>Password:</label>
       <input type="password" id="password" name="user_password">
       <label>Confirm Password:</label>
-      <input type="password" id="password" name="user_password_confirm">
+      <input type="password" id="password" name="password">
     </fieldset>
     <button type="submit" name="sign_up">Sign Up</button>
     <h4>Already a user? <a href="login.html">Login Here</a></h4>

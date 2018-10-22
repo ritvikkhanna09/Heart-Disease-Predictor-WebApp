@@ -9,7 +9,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="../static/style.css" />
+	<script>
+		$(document).ready(function(){
+		token = localStorage.getItem("token")
+		if(!token){
+			window.location = "login.html"
+		}
+})
+	</script>
 </head>
 
 <body style="  background-image: url('../res/heart.jpg'); background-repeat: no-repeat;background-attachment: fixed; background-position: left; ">
